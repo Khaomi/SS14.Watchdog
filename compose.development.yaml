@@ -1,0 +1,16 @@
+services:
+  ss14_watchdog:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: ss14_watchdog
+    user: 1654:1654
+    volumes:
+      - ./appsettings.yml:/app/appsettings.yml
+      - ./instances:/app/instances
+      - ./data.db:/app/data.db
+    ports:
+      # SECURE THIS PORT!
+      # either change to 127.0.0.1:8080:8080 to only allow local access, or use a reverse proxy to secure it.
+      - 8080:8080
+    restart: unless-stopped

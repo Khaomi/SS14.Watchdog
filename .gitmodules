@@ -1,0 +1,3 @@
+[submodule "SS14.Watchdog"]
+	path = SS14.Watchdog
+	url = https://github.com/space-wizards/SS14.Watchdog.git
