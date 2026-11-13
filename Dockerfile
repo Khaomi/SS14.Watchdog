@@ -13,4 +13,6 @@ VOLUME /app/data.db
 EXPOSE 5000/tcp
 EXPOSE 1212/tcp
 EXPOSE 1212/udp
+ENV Data__File="/app/data.db"
+ENV Servers__InstanceRoot="/app/instances"
 ENTRYPOINT ["./SS14.Watchdog"]
