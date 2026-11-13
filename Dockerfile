@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 
 # Make volume dirs
+RUN mkdir /app
 RUN for DIR in /app/instances; do mkdir $DIR; chown app: $DIR; done
 RUN touch /app/data.db && chown app: /app/data.db
 
