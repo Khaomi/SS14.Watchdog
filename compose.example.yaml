@@ -1,6 +1,6 @@
 services:
   ss14_watchdog:
-    image: ghcr.io/khaomi/ss14.watchdog:0.0.1
+    image: ghcr.io/khaomi/ss14.watchdog:latest
     container_name: ss14_watchdog
     volumes:
       - ./appsettings.yml:/app/appsettings.yml
