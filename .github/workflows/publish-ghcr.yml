@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          recursive: true
+          submodules: true
 
       - name: Log in to the Container registry
         if: github.event_name != 'pull_request'
