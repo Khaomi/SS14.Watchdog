@@ -7,9 +7,11 @@ This repository is based on [Robust.Cdn](https://github.com/space-wizards/Robust
 
 Run these commands
 ```bash
-touch appsettings.yml
-touch data.db
 mkdir instances
+touch data.db
+chmod 777 instances
+chmod 777 data.db
 ```
 
-Copy the compose and run `docker compose up`
+Then copy `appsettings.example.yml` and rename it to `appsettings.yml`
+Then run `docker compose up`
