@@ -1,7 +1,5 @@
 # SS14.Watchdog
-A very minial and dockerized version of SS14.Watchdog.
-
-This repository is based on [Robust.Cdn](https://github.com/space-wizards/Robust.Cdn)'s repository.
+A very minimal and dockerized version of SS14.Watchdog.
 
 ## Instructions
 
