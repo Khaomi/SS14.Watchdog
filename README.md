@@ -26,4 +26,5 @@ If your game server can't ping Watchdog, the blow config is most likely the fix.
 ```yaml
 BaseUrl: "http://localhost:27689"
 Urls: "http://0.0.0.0:27689"
-#AllowedHosts: "*"```
+AllowedHosts: "*"
+```
