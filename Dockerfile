@@ -15,4 +15,7 @@ EXPOSE 1212/tcp
 EXPOSE 1212/udp
 ENV Data__File="/app/data.db"
 ENV Servers__InstanceRoot="/app/instances"
+# Below are used for PostgreSQL
+RUN apt update -y
+RUN apt install -y libkrb5-3 libgssapi-krb5-2
 ENTRYPOINT ["./SS14.Watchdog"]
